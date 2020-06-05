@@ -4,7 +4,11 @@ using System.Text;
 
 namespace SolarCoffee.Data.Models
 {
-    class ProductInventorySnapshot
+    public class ProductInventorySnapshot
     {
+        public int Id { get; set; }
+        public DateTime SnapshotTime { get; set; }
+        public int QuantityOnhand{ get; set; }
+        public Product Product { get; set; }
     }
 }
